@@ -1,0 +1,11 @@
+--- depends/configure.ac.1	2018-07-03 09:00:13.000000000 +0000
++++ depends/configure.ac	2018-07-03 09:00:35.000000000 +0000
+@@ -17,7 +17,7 @@
+ fi
+ 
+ ## Check for CMake - needed to build ORCA
+-AC_CHECK_PROGS(CMAKE, cmake)
++AC_CHECK_PROGS(CMAKE, cmake3)
+ if test -z "$CMAKE"; then
+    AC_MSG_ERROR([CMake 3.1 or later is needed to build ORCA.])
+ fi
